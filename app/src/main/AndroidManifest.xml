@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kumarGroup" >
+
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.READ_PRECISE_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<!--    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.teleknesis.c2dm.sample.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!--
+<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/networksecurityconfig"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n" >
+
+        <activity
+            android:name="com.example.kumarGroup.Dashboard.DashboardDemoActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.Inquiry.InquiryMainGeneralActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiry.ViewInqGeneralCatActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealViewItemMenu"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.DealStageItemMenu"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiry.AgeingViewInqActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ScoreBoard.PerfomanceMarketingActivityINQ"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ScoreBoard.PerfomanceMarketingActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ScoreBoard.ScoreBoardCategory"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.WalletInsensitive.InsensitiveDeliveryListDisplayActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.OtpVerificationScreenActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.ResetPasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.CustomerProfileData.DeleteProfileFormActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.TrueValue.UserExperienceActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.TrueValue.ReviewList"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.kumarGroup.TrueValue.TrueValueMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.TrueValue.FirstMeetingReviewList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.WalletTraveling.WalletPaymentCollection"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.WalletInsensitive.WalletOtp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.WalletAccountLedger.WalletAccountLadgerView"
+            android:exported="true"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name="com.example.kumarGroup.WalletAccountLedger.WalletAcLadgerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.CustomerProfileData.VisitSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.CustomerProfileData.NewVisitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.CustomerProfileData.WalkingEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.Loan.Loan_final_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.Loan.loan_otp_verification"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.NEW.NewcountActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.NEW.Display_new_data_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.NEW.Select_NEW_Type_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.GeneralVisit.ShowGeneralVisitDataActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.GeneralVisit.Type_Count_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.GeneralVisit.General_Visit_TypeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.ByVillageList.DropDownActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.ByVillageList.VillageListShow2Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ReportCollection.ByVillageList.VillageListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.BookingDeliveryUpload.NumberPlate.NumberPlate_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.BookingDeliveryUpload.NumberPlate.NumberPlate_UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.BookingDeliveryUpload.Rcbook_Update.RC_Customer_UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.BookingDeliveryUpload.Rcbook_Update.RC_Customer_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.BookingDeliveryUpload.RcBook_Financer.RC_Financer_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.BookingDeliveryUpload.RcBook_Financer.RC_Financer_UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ScoreBoard.ScoreBoardViewViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ProfileVillage.VillageListShowProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ProfileVillage.VillageListProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ProfileVillage.CatlistActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.Village_List.VillageListShowActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.Village_List.Village_List_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.Common_Search.CommonSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.Common_Search.CommonSearchActivity1"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.FeedbackCall.FeedbackCallAddActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.FeedbackCall.FeedbackCallActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.PerfomanceActivityINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.PerfomanceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.ScreenDeliveryActivityINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.ScreenDeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DeliveryButtonActivityINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.DeliveryButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.Warm3StageActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.OtpDealActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.NegotiationDealActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.MakeandofferDealViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealstageRecyclerActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealFormGeneralActivityViewINQ1"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealstageRecyclerActivityViewINQ1"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.NegotiationDealActivityViewINQ_test"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealstageHistoryActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealFormGeneralActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealfirstMeetingActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealfirstMeetingDeliveryActivityViewINQ"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealViewMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.DealViewMainActivityNegotiation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.NegotiationDealActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.MakeandofferDeal"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.Warm3StageActivity"
+            android:exported="false" />
+        <activity android:name="com.example.kumarGroup.DealstageAK.DealstageHistoryActivity" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.DealfirstMeetingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.OtpDealActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.DealFormGeneralActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.DealstageAK.DealstageRecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.Inquiry.DealDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.Inquiry.ViewImageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.Inquiry.AddImageViewimageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.cashbookAK.HistoryTransferMoneyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.cashbookAK.TransferMoneyDesignActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.cashbookAK.OutButtionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.cashbookAK.InButtionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.cashbookAK.CashbookDashboard"
+            android:exported="true"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name="com.example.kumarGroup.meetingRoomAK.MeetingRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.ShowTripFilterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.FilterDateLocation"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.TotalLocationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.Select_employee"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.LineDrawMapActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.MapDetailsEMActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.EmployeeTracker.ak.CurrentLocationEM"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.SSP.DataBank.AK.SSPTractorDoItak"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.SSP.DataBank.AK.SSPGaneralInformationAK"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.VendorDashboard.VendorOtpVerifyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.VendorDashboard.DeliveryButtonActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.kumarGroup.VendorDashboard.CancelButtionActivity"
+            android:exported="true" />
+        <activity android:name="com.example.kumarGroup.VendorDashboard.ReqVenGaneralListActivity" />
+        <activity android:name="com.example.kumarGroup.VendorDashboard.RequestVendorMainActivity" />
+        <activity android:name="com.example.kumarGroup.SSP.Request.GanerallistMainActivity" />
+        <activity android:name="com.example.kumarGroup.SSP.Request.AddRequestMainActivity" />
+        <activity android:name="com.example.kumarGroup.SSP.Request.RequestMainActivity" />
+        <activity android:name="com.example.kumarGroup.SSP.ViewAccountDatabank.ViewAccountDisplayDateFilterActivity" />
+        <activity android:name="com.example.kumarGroup.VendorDashboard.ViewDocDisplayActivity" />
+        <activity android:name="com.example.kumarGroup.VendorDashboard.ViewDocumentMainActivity" />
+        <activity android:name="com.example.kumarGroup.SSP.ViewAccountDatabank.ViewAccountDatabankActivity" />
+        <activity
+            android:name="com.example.kumarGroup.SSP.SSPDashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.kumarGroup.VendorDashboard.VendorDashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.kumarGroup.SmartCard.AddPointValueFourthActivity" />
+        <activity android:name="com.example.kumarGroup.SmartCard.AddPointValueThirdActivity" />
+        <activity android:name="com.example.kumarGroup.SmartCard.AddPointValueSecondActivity" />
+        <activity android:name="com.example.kumarGroup.SmartCard.AddPointValueFirstActivity" />
+        <activity android:name="com.example.kumarGroup.SmartCard.AddSmartCardFirstActivity" />
+        <activity android:name="com.example.kumarGroup.SmartCard.SmartCardFirstActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.SecondServiceDRActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.FirstServiceFormActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.FIrstServiceDRActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.GaneralListFormActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.AddDrViewActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.AddDRMainActivity" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.DeliveryReportButtonMain" />
+        <activity android:name="com.example.kumarGroup.DeliveryReport.DelievryReportMainActivity" />
+        <activity android:name="com.example.kumarGroup.WalletSelectDateAttendence" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.DocumentCollecationFormActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.DocumentCollectionMainActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.General.ComplainFormActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.General.ComplainBoxDateFilterActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.General.ComplainRegisterActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.DocumentBoxSecondActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.DocumentBoxMainActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.ComplainBoxSecondActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.ComplainBoxMainActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.DailyViewProfileActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.WeekViewProfileActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.MonthlyViewProfileActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.FourButtonMainActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.MWDFormActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.MonthWeekDaySecondActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.DayFirstActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.WeeklyFirstActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.MonthlyFirstActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.GeneralVisitFormActivity" />
+        <activity android:name="com.example.kumarGroup.myProfileNew.MyProfileMainActivity" />
+        <activity android:name="com.example.kumarGroup.TrueValue.PriceOfTractorActivity" />
+        <activity android:name="com.example.kumarGroup.TrueValue.TvThirdFormActivity" />
+        <activity android:name="com.example.kumarGroup.TrueValue.FormDetailsTvActivity" />
+        <activity android:name="com.example.kumarGroup.ScoreBoard.DisplayScoreBoardActivity" />
+        <activity android:name="com.example.kumarGroup.ScoreBoard.DateFilterActivity" />
+        <activity android:name="com.example.kumarGroup.ScoreBoard.ScoreBoardMainActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.ViewProfileDetailsActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.CategoryDetailsTwoActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.CategoryMyProfileOneActivity" />
+        <activity android:name="com.example.kumarGroup.MyProfile.EmpMyProfileMainActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.EditProfileFormActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.EditProfileMainActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.DisplayCatPermissionActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.FeedBackCall.RemoveCallActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.CategoryPermissionMainActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.VisitVIActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.FeedBackCall.FeedbcakCallMainActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Invoice.ViewInvoiceNewActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Month.MOnthWeekDayFormActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Month.MonthWeekDayWsTwoActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Daily.DailyWsOneActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Weekly.WeeklyWsOneActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Month.MonthWsOneActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.General.WSGeneralVisitActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Invoice.ViewInvoiceActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Invoice.InvoiceDataDisplayActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Invoice.InvoiceDateSelectActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.WsManager.WsManagerEditFormActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.WsManager.WsManagerMainActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.MonthWeekDayFormVIActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.DailyViewInqOneActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.WeeklyViewInqOneActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.MonthlyViewInqTwoDataActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.ViewInquiryFormActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.GenViewInqTwoDataActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.MonthlyViewInqOneActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.GeneralViewInquiryOneActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.ViewInqAllCatActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiry.ViewInquiryMainActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.ViewCustomerDatadisplayMainActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.ViewMobileAddActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.AddCutomerActivity" />
+        <activity android:name="com.example.kumarGroup.CustomerProfileData.CustomerMainActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.AddCustomerDetailsDealstageActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.CustomerSkimDealstageActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.DownPaymentDealstageActivity" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.EnglishNumberToWordsDealstage"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.NumToWordDealstage"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.PriceDetailsAddDealstageActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.ProductDetailsDealstageActivity" />
+        <activity android:name="com.example.kumarGroup.ViewInquiryDealStage.Add.RtoDetailsDealstageActivity" />
+        <activity android:name="com.example.kumarGroup.WalletTraveling.WalletTravelingDateActivity" />
+        <activity android:name="com.example.kumarGroup.WalletTraveling.TravelingDataDisplayActivity" />
+        <activity android:name="com.example.kumarGroup.Traveling.EndTravelingActivity" />
+        <activity android:name="com.example.kumarGroup.Traveling.StartTravellingActivity" />
+        <activity android:name="com.example.kumarGroup.Traveling.TravelingMainActivity" />
+        <activity android:name="com.example.kumarGroup.WalletOverTime.OverTimeWalletDisplayActivity" />
+        <activity android:name="com.example.kumarGroup.WalletOverTime.OverTimeDateSelectActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.MonthDayWeekFormActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.MonthlyInqDataFilterActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.VisitInquiryActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.MonthlySearchActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.DailyInqOneActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.WeeklyOneActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.MonthlyInqDataActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.MonthlyInquiryActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.FormGeneralActivity" />
+        <activity android:name="com.example.kumarGroup.Inquiry.DisplayGeneralActivity" />
+        <activity
+            android:name="com.example.kumarGroup.Inquiry.GeneralInquiryMainActivity"
+            android:exported="true" >
+
+            <!--
+            <intent-filter>
+                <action android:name="com.example.sonalikatrac.Inquiry.GeneralInquiryMainActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="com.example.kumarGroup.Inquiry.InquiryMainActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.BorrowLedgerTwoActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.BorrowLadgerOneActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.GenVisitPaymentCollectionActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.WsPayPen.PaymentWsActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.WsPayPen.PaymentPendingWSActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Add.FourthWsAddMainActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Add.ThirdWsAddActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Add.WsAddSecondActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.Add.AddFirstActivity" />
+        <activity android:name="com.example.kumarGroup.Workshop.WorkshopMainActivity" />
+        <activity android:name="com.example.kumarGroup.WalletInsensitive.InsensitiveListDisplay" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.PaymentPending.PaymentMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.PaymentPending.PendingDocActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.PaymentPending.PaymentPendingMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Passing.PassingFormActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Passing.PassingDataMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.DocumentPrint.DocumentPrintFormActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.DocumentPrint.DocumentPrintMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Delivery.DeliveryFormActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Delivery.DeliveryMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Loan.LoanFillFormActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Loan.LoanDataMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Booking.BookingPhaseOneActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Booking.BookingUploadMainActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.CustomerSkimActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.DownPaymentActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.RtoDetailsActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.PriceDetailsAddActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.ProductDetailsActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.AddCustomerDetailsActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.Add.AddCustomerDetailsOtherActivity" />
+        <activity android:name="com.example.kumarGroup.BookingDeliveryUpload.BookingDeliveryMainActivity" />
+        <activity android:name="com.example.kumarGroup.Notification.takeSelfieNotificationActivity" />
+        <activity android:name="com.example.kumarGroup.Notification.NotificationMainActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.VisitRCActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.RCNewEntryFormActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.AllEntryMonthWeekDayActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.DailyRcActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.WeeklyRCActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.MonthlyRCActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.OpenGeneralVisitFormActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.ShowRCGVActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.RCGVCategoryListActivity" />
+        <activity android:name="com.example.kumarGroup.ReportCollection.ReportCollectionMainActivity" />
+        <activity android:name="com.example.kumarGroup.OverTime.SundayCheckOutActivity" />
+        <activity android:name="com.example.kumarGroup.OverTime.CheckInCheckOutLabelActivity" />
+        <activity android:name="com.example.kumarGroup.OverTime.CheckOutStartOvertimeActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.VisitFollowUpActivity" />
+        <activity android:name="com.example.kumarGroup.OverTime.SundayOverTimeActivity" />
+        <activity android:name="com.example.kumarGroup.OverTime.StartOverTimeOvertimeActivity" />
+        <activity android:name="com.example.kumarGroup.OverTime.OverTimeMainActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.DisplayMonthWeekDayActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.ShowMonthlyFUActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.DailyFollowUpActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.WeeklyFollowUpActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.MonthlyInquiryFollowUpActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.FollowUpFirstActivity" />
+        <activity android:name="com.example.kumarGroup.WorkBook.WorkBookMainActivity" />
+        <activity android:name="com.example.kumarGroup.FollowUp.FollowUpMainActivity" />
+        <activity android:name="com.example.kumarGroup.Loan.SelectDateForLoanActivity" />
+        <activity android:name="com.example.kumarGroup.Maintenance.SelectMaintenanceDateActivity" />
+        <activity android:name="com.example.kumarGroup.Maintenance.DisplayMaintenanceActivity" />
+        <activity android:name="com.example.kumarGroup.Maintenance.MaintananceMainActivity" />
+        <activity android:name="com.example.kumarGroup.Maintenance.AddMaintenanceActivity" />
+        <activity android:name="com.example.kumarGroup.Loan.DisplayLoanActivity" />
+        <activity android:name="com.example.kumarGroup.Loan.AddLoanDetailActivity" />
+        <activity android:name="com.example.kumarGroup.Loan.ManageLoanActivity" />
+        <activity android:name="com.example.kumarGroup.WalletSlarySlip.DisplaySalarySlipActivity" />
+        <activity android:name="com.example.kumarGroup.WalletSlarySlip.WalletSalarySlipActivity" /> <!-- <activity android:name=".Adapterattemdancewallet" /> -->
+        <activity android:name="com.example.kumarGroup.WalletAttendance" />
+        <activity android:name="com.example.kumarGroup.Wallet" /> <!-- <activity android:name=".AdapterActivity" /> -->
+        <activity android:name="com.example.kumarGroup.Activity" /> <!-- <activity android:name="com.example.sonalikatrac.Activity" /> -->
+        <activity android:name="com.example.kumarGroup.HalfSundayChackout" />
+        <activity android:name="com.example.kumarGroup.HalfSundayChackin" />
+        <activity android:name="com.example.kumarGroup.HalfDayChackOut" />
+        <activity android:name="com.example.kumarGroup.Absent" />
+        <activity android:name="com.example.kumarGroup.FoPlace" /> <!-- <activity android:name=".AdapterTaskinfo" /> -->
+        <activity android:name="com.example.kumarGroup.ChackOut" />
+        <activity android:name="com.example.kumarGroup.LanchBreak" />
+        <activity android:name="com.example.kumarGroup.TaskWoek" />
+        <activity android:name="com.example.kumarGroup.ChackIn" />
+        <activity android:name="com.example.kumarGroup.ChackIn1" />
+        <activity android:name="com.example.kumarGroup.Attendance" /> <!-- <activity android:name=".AdapterfoPersonalDetail" /> -->
+        <activity android:name="com.example.kumarGroup.FoDeliveryDetails" /> <!-- <activity android:name=".AdapterFoSalesInfo" /> -->
+        <activity android:name="com.example.kumarGroup.FoVisit" />
+        <activity android:name="com.example.kumarGroup.ViewProfile" />
+        <activity android:name="com.example.kumarGroup.GaneralInformation" />
+        <activity android:name="com.example.kumarGroup.TractorDoIt" />
+        <activity android:name="com.example.kumarGroup.StartOverTime" />
+        <activity android:name="com.example.kumarGroup.EndOverTime" />
+        <activity android:name="com.example.kumarGroup.DealstageAK.DealstageMainActivity" />
+        <activity android:name="com.example.kumarGroup.DealstageAK.DealstageMainNegotiationActivity" />
+        <activity
+            android:name="com.example.kumarGroup.FoLogin"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.kumarGroup.FoDashbord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.kumarGroup.HalfDay" />
+        <activity android:name="com.example.kumarGroup.FullSunday" />
+        <activity android:name="com.example.kumarGroup.MainActivity" />
+        <!--
+<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRaYaw7H_jyFKRq5jobCRiSe1lAvioGQ4" />
+        -->
+        <!--
+<meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <service
+            android:name="com.example.kumarGroup.MyNewIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver
+            android:name="com.example.kumarGroup.BootupReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.DailyReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.ak.MornigFirstAlarm"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.ak.MornigTwoAlarm"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.ak.MornigThreeAlarm"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.ak.MornigFourAlarm"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.ak.MornigFiveAlarm"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.WakeUpAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.CheckInAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.DailyReceiverEvening"
+            android:enabled="true" />
+        <receiver
+            android:name="com.example.kumarGroup.Alarm.WakeUpAlarmReceiverEvening"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.kumarGroup.listener.OutCallLogger"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <!--
+ <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        -->
+        <service
+            android:name="com.example.kumarGroup.MyFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name=".AlarmService" />
+            </intent-filter>
+        </service>
+        -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+
+            <!--
+            <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+            -->
+        </provider>
+    </application>
+
+</manifest>

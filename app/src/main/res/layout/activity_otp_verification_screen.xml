@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".OtpVerificationScreenActivity">
+
+    <TextView
+        android:textSize="24dp"
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/otp_confirm_header">
+
+        </TextView>
+
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/otp_confirm_message_top">
+
+        </TextView>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:id="@+id/tv_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+91785755444">
+
+        </TextView>
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/otp_input_message_top">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp_edit_text_1"
+                style="@style/otp_edit_text">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/otp_edit_text_2"
+                style="@style/otp_edit_text">
+            </EditText>
+
+            <EditText
+                android:id="@+id/otp_edit_text_3"
+                style="@style/otp_edit_text">
+            </EditText>
+
+            <EditText
+                android:id="@+id/otp_edit_text_4"
+                style="@style/otp_edit_text">
+            </EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/resend_otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:text="Resend OTP"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button"
+        android:id="@+id/btnLoginVerify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:text="@string/btn_otp_verify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    android:id="@+id/cardView_feedbackCall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/LinShowDetailRcGv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_button"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/customer_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Custer Name:-"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/delivery_date"
+                    android:layout_toLeftOf="@id/customer_name1"
+                    android:text="Jemin"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/mobile_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Mobile Number:-"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/delivery_date"
+                    android:layout_toLeftOf="@id/mobile_number1"
+                    android:text="Jemin"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/village1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Village Name:-"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/delivery_date"
+                    android:layout_toLeftOf="@id/village1"
+                    android:text="Jemin"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Date:-"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/delivery_date"
+                    android:layout_toLeftOf="@id/date1"
+                    android:text="Jemin"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/deal_stage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Deal Stage:-"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/deal_stage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/deal_stage1"
+                    android:layout_toLeftOf="@id/date1"
+                    android:text="Jemin"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/employee_vemp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Employee Name:-"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/employee_vemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/date1"
+                    android:layout_toLeftOf="@id/employee_vemp1"
+                    android:text="Jemin"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/lin_MDY_call"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangel_line"
+                    android:layout_weight="1"
+                    android:src="@drawable/call"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+
+                    android:id="@+id/lin_MDY_whapp"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangel_line"
+                    android:layout_weight="1"
+                    android:src="@drawable/whapppng"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+                    android:id="@+id/lin_MDY_sms"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangel_line"
+                    android:layout_weight="1"
+                    android:src="@drawable/sms"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+                    android:src="@drawable/general_visit"
+                    android:id="@+id/homeIcon"
+                    android:background="@drawable/rectangel_line"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

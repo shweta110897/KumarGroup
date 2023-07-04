@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDeliveryUpload.DocumentPrint.DocumentPrintFormActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutDocPrint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/colorAccent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Agreement Details"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingNo_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking No"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtFillBookingType_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Type"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingType_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Type"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingDate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Login Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingLoginName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Login Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- ****************************************************    -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Customer Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_Fname_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter First Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_LastName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Last Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:visibility="gone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Surname"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_CD_Surname_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Surname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_MobileNo_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_WhatsappNo_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="WhatsApp No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:visibility="gone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reference Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_CD_ReferenceName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Reference Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:visibility="gone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reference No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_CD_ReferenceNo_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Reference No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_State_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter State"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_City_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter City"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="District"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_District_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter District"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Taluko"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_Taluko_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Taluko"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Village"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_Village_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Village"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_EmployeName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Employee Name"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtPassBookBook_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pass Book"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_PassBook_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Pass Book"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtChequeBook_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Book"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_ChequeBook_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Cheque Book"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Option"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_PaymentOption_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Payment Option"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_Booking_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_UploadBookingPhoto_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Booking Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_AdharCard_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_AdharCard_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload AadharCard Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_AdharCard_DocPrint2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_AdharCard_DocPrint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload AadharCard Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_ElectionCard_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_ElectionCard_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_ElectionCard_DocPrint2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_ElectionCard_DocPrint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_PassportSize_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_PassportSize_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload 7/12 8a Size Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_PassportSize_DocPrint2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_CD_PassportSize_DocPrint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload 7/12 8a Size Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Purchase Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PD_PurchaseName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Purchase Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PD_ModelName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Model Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PD_Description_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Price Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deal Price"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PriceD_price_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Deal Price"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deal  In World"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PriceD_priceInWord_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Deal Price In word"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PriceD_GST_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="GST"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="RTO Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoMain_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtRTOTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO Tax"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoTax_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO Tax"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtRTOPassing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO Passing"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoPassing_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO Passing"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_Insurance_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Insurance"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtAgentFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agent Fees"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_AgentFees_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Agent Fees"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtNumberPlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number Plat"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_NumberPlat_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Number Plat"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtLoanCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Charge"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_LoanCharge_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Loan Charge"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Down Payment Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_BookingAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPCashAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_CashAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Cash Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPBankOption_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Option"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_BankOption_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Bank Option"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPChequeDate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_ChequeDate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint=" Cheque Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPChequeAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_ChequeAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Cheque Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_cheque_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_Cheque_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadCheque_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Cheque Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <!--  *******************************************  -->
+
+
+                <TextView
+                    android:id="@+id/txtDPNEFT_RTGSdate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEFT/RTGS date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_NEFT_RTGS_date_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter NEFT/RTGS Date"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPNEFT_RTGSAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEFT/RTGS Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_NEFT_RTGSAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter NEFT/RTGS Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_NEFT_RTGS_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_NEFT_RTGS_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadNEFT_RTGS_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload NEFT/RTGS Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!--  *******************************************  -->
+
+                <TextView
+                    android:id="@+id/txtDPMake_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edt_DownP_SelectMake_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Make Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPModelName_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Name"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edt_DownP_ModelVehicle_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Model Name"
+                    android:inputType="text"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPManufectureYear_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manufacture Year"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_ManufactureYear_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Manufacture Year"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPOldAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Old Tractor Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_oldAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Old Tractor Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPPaperExpense_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Expense"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_PaperExchange_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Paper Expense"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPOldTractorAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Expense Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_oldTractorAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Paper Expense Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPNoc_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noc"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_NOC_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Noc"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_NocPhoto_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_NocPhoto_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadNocPhoto_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload NOC Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_OldVehicle_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_OldVehicle_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadOldVehicle_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Old Vehicle Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_Rcbook_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_RcBook_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadRCBook_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload RCBook Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_Rcbook_DocPrint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_RcBook_DocPrint2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadRCBook_DocPrint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload RCBook Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_Election_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_ElectionPhoto_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadElectionPhoto_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_Election_DocPrint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_ElectionPhoto_DocPrint2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadElectionPhoto_DocPrint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ***************Consumer Detail******************************** -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Consumer Skim"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer Skim"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_ConsumerSkim_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Consumer Skim"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_ConsumerSkim_passing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hood"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Hood_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Hood"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top Link"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_TopLink_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Top Link"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Draw Bar"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_DrawBar_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Draw Bar"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tool Kit"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_ToolKit_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Tool Kit"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bumper"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Bumper_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Bumper"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hitch"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Hitch_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Hitch"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Description_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- *******************Loan Detail********************** -->
+
+            <LinearLayout
+                android:id="@+id/lin_LoanDetail_DocPrint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Loan Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Retail Executive Form"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_REF_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Retail Executive Form"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finance Form"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_FinanceForm_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Retail Executive Form"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_LoanAmount_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Loan Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Sanction Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_LoanSancAmont_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Loan Sanction Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Charge"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_LoanCharge_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Loan Charge"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Land Detail"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_LandDetail_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Land Detail"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cibil Score"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_CibilScore_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Cibil Score"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fi Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_FiDate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Fi date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sanction Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_SanctionDate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Sanction Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stage"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDetail_Stage_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Sanction Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+
+                <Spinner
+                    android:id="@+id/spn_DocPrintDetail_stageloan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"/>
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_LoanDetail_BankpassBook_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_LoanDetail_BankPassBook_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Bank PassBook Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_LoanDetail_BankpassBook_DocPrint2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_LoanDetail_BankPassBook_DocPrint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Bank PassBook Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_LoanDetail_Cheque_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_LoanDetail_Cheque_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Cheque Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_LoanDetail_SarpanchID_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_LoanDetail_SarpanchId_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Sarpnach ID Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_LoanDetail_SignatureVerifi_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_LoanDetail_SignatureVeri_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Signatire Vartification Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_cashLoan_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Cash Details"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/edt_CashDetail_Date_DocPrint"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/edt_CashDetail_Amount_DocPrint"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/edt_CashDetail_Description_DocPrint"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Description"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+
+                </LinearLayout>
+
+                <!-- *******************Delivery Detail********************** -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Delivery Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+
+                <TextView
+                    android:id="@+id/txt_Tyre_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tyre"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_Type_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Tyre"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_Battery_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Battery"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_Bettry_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Battery"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DocPrintDate_DocPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Delivery Date"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DocPrintPhoto_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DocPrintPhoto_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Delivery Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ChesisPrint_DocPrint"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_ChesisPrint_DocPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload ChesisPrint Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+
+
+                <!-- ******************************************************** -->
+
+                <Button
+                    android:id="@+id/btn_DocPrint_Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

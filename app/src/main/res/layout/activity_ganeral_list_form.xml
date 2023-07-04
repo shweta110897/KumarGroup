@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryReport.GaneralListFormActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_SmartCard_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:hint="Enter Smart Card No"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_SmartCard_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:hint="Enter Smart Card Date"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+
+
+            <LinearLayout
+                android:id="@+id/LinSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/txt_save_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spn_save_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_SaveMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_saveMobile"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_saveMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_collect_whatsapp_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/spn_collect_whatsapp_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:id="@+id/edit_collect_whatsapp_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:hint="Enter WhatsApp Number"
+                    android:inputType="number"
+                    />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_CallWhtaNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_colWhatNo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_colWhatNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_subscribe_youtube_chanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/spn_subscribe_youtube_chanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/lin_subscribeYtChannel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_SubYtChannel"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_SubYtChannel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_like_fb_insta_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+
+
+
+
+                <Spinner
+                    android:id="@+id/spn_like_fb_insta_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_LikeFbInsta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_LikeFbInsta"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_LikeFbInsta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_toolkit_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+
+
+
+
+                <Spinner
+                    android:id="@+id/spn_toolkit_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                   />
+
+                <LinearLayout
+                    android:id="@+id/lin_toolkitDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_toolKitDeli"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_toolKitDeli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_key_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/spn_key_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_keyDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_keyDelivery"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_keyDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_check_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp"/>
+
+                <Spinner
+                    android:id="@+id/spn_check_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:id="@+id/lin_checkAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_checkAmount"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_checkAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_warranty_pollicy_discuusion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+
+
+
+                <Spinner
+                    android:id="@+id/edt_warranty_pollicy_discuusion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_warrentyPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_WarrentyPolicy"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_WarrentyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_check_oil_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+
+
+
+                <Spinner
+                    android:id="@+id/edt_check_oil_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_checkOil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_checkOil"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_checkOil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_check_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+
+
+
+
+                <Spinner
+                    android:id="@+id/edt_check_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_checkAccesories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_checkAsse"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_checkAsse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_installation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+
+
+
+                <Spinner
+                    android:id="@+id/edt_installation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/linInstallation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_Installation"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_Installtion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_name_plat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+                <Spinner
+                    android:id="@+id/Spn_name_plat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/lin_NamePlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_NamePlat"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_NamePlat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_tractor_number_plat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+
+                <Spinner
+                    android:id="@+id/edt_tractor_number_plat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_tractNoPlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_tractNoPlat"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_tractNoPlat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <!--FS,SS,TS Gone-->
+
+                <Spinner
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_fisrt_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+
+                    android:id="@+id/lin_firstService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_firstService"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_firstService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <Spinner
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_second_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+
+                    android:id="@+id/lin_SecondService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_secService"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_secService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_third_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+
+                    android:id="@+id/lin_thirdService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_thirdSer"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_thirdSer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload  Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!--FS,SS,TS Gone-->
+
+                <TextView
+                    android:id="@+id/txt_DeliveryYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+
+                <Spinner
+                    android:id="@+id/Spn_deliveryPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_DeliveryPho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_deliveryPhoto"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_DeliveryPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Delivery Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_ChaisPrintYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+
+                <Spinner
+                    android:id="@+id/Spn_ChasisPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/lin_ChasisPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ChasisPhoto"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txt_ChasisPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Chasis Print Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_EngineYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+                <Spinner
+                    android:id="@+id/Spn_engineNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+
+                <EditText
+                    android:id="@+id/edt_engine_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter engine no"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_ChasisYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+                <Spinner
+                    android:id="@+id/Spn_ChasisNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edt_chasis_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter chasis no"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_TarctorTypeYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+
+
+                <Spinner
+                    android:id="@+id/spn_Tractortype"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+
+
+                <EditText
+                    android:id="@+id/edt_modelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:hint="Enter Model Name"
+                    android:paddingLeft="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edt_modelYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:hint="Enter Model Year"
+                    android:paddingLeft="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edt_LandRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:hint="Enter Land Record"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_RentYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spn_Rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_RotavetorYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+                <Spinner
+                    android:id="@+id/spn_Rotavator"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_SpeedDreelYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+
+                <Spinner
+                    android:id="@+id/spn_SpeedDrel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txt_GardenYesNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spn_Garden"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+                <!--Line TextView-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/LinTextViewData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <TextView
+                    android:id="@+id/txt_fisrt_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_second_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_third_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Submit_gen_list"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Submit"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

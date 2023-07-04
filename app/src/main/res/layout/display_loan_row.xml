@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="8dp">
+
+     <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+           <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgDLR"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:src="@drawable/down_arrow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtDLRLoanName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textSize="18dp"
+                    android:layout_margin="3dp"
+                    android:paddingStart="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtDLRLoanType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan"
+                    android:textSize="17dp"
+                    android:layout_margin="3dp"
+                    android:paddingStart="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtDLRLoanDescription"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:layout_margin="3dp"
+                    android:text="Descr"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtDLRLoanDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_margin="5dp"
+                    android:gravity="end"
+                    android:paddingEnd="3dp"
+                    android:text="Date"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/txtDLRLoanAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1200"
+                    android:textSize="16dp"
+                    android:gravity="end"
+                    android:layout_margin="3dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtDLRLoanPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Percentage"
+                    android:layout_margin="3dp"
+                    android:textSize="16dp"
+                    android:gravity="end"
+                    android:paddingEnd="5dp"
+                    android:layout_marginEnd="5dp"/>
+
+            </LinearLayout>
+
+         <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>&ndash;&gt;
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDLRLoanName"
+                    android:textSize="18sp"
+                    android:text="EMP Name"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDLRLoanDate"
+            android:text="Date"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtDLRLoanDesc"
+            android:text="Description"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtDLRLoanDebit"
+            android:text="Debit"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:id="@+id/txtDLRLoanCredit"
+            android:text="Credit"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtDLRLoanBalance"
+            android:text="Balance"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtDLRLoanInterest"
+                android:text="interest"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtDLRLoanTotal_Amount"
+                android:text="Amount"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+         <!--   <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+
+            <TextView
+                android:id="@+id/txtDLRLoanDate"
+                android:text="Date"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtDLRLoaninterest_f"
+                android:text="interest_f"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtDLRLoanDebit_f"
+                android:text="Debit_f"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtDLRLoanCredit_f"
+                android:text="Credit_f"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtDLRLoanBalance"
+                android:text="balance"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtDLRLoanper"
+                android:text="per"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtDLRLoant_amt"
+                android:text="t_amt"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />-->
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardwhite"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linBookingUploadMain">
+
+
+
+    <TextView
+        android:id="@+id/tv_Ganeral_prName"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_Ganeral_Vendor"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_Ganeral_CuName"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_Ganeral_Mobile"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_Ganeral_Village"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_added_date"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_Ganeral_Status"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_Ganeral_count"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_gen_delevery"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Delivery"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="10dp"
+        android:background="@color/Green"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_gen_accept"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            android:background="@color/Green"/>
+
+        <Button
+            android:id="@+id/btn_gen_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            android:background="@color/snack_red"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+  
+
+
+</LinearLayout>

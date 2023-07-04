@@ -1,0 +1,1769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".Workshop.Add.AddFirstActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/disable_page"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/disable_page"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/disable_page"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_page">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_smartCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_ScardYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_complainNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Complain Number"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <Spinner
+                        android:id="@+id/spn_SecondWS_selectData"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                    
+                    <Spinner
+                        android:id="@+id/spn_Ws_Sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/firstmain1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Code" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+                        <Button
+                            android:id="@+id/btnpo1"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rate Display" />
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+            <LinearLayout
+                android:id="@+id/firstmain2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linNoTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                   <!-- <Spinner
+                        android:id="@+id/spn_Ws_Sale2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                       android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                   <!-- <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart2"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo2"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                   <!-- <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:layout_marginTop="10dp"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                   <!-- <Spinner
+                        android:id="@+id/spn_Ws_Sale3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                  <!--  <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart3"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo3"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                   <!-- <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                   <!-- <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+
+                <LinearLayout
+                    android:id="@+id/linNoFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                   <!-- <Spinner
+                        android:id="@+id/spn_Ws_Sale4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                       android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                   <!-- <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart4"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo4"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<Spinner
+                        android:id="@+id/spn_Ws_Sale5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                       android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                  <!--  <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart5"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo5"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                   <!-- <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+                <LinearLayout
+                    android:id="@+id/linNoSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<Spinner
+                        android:id="@+id/spn_Ws_Sale6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <!--<EditText
+                        android:id="@+id/edt_Ws_Add_SubPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart6"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo6"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<Spinner
+                        android:id="@+id/spn_Ws_Sale6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                       android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                   <!-- <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart7"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo7"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoEight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<Spinner
+                        android:id="@+id/spn_Ws_Sale6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                    <!--<EditText
+                        android:id="@+id/edt_Ws_Add_SubPart8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart8"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo8"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoNine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<Spinner
+                        android:id="@+id/spn_Ws_Sale6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                   <!-- <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart9"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo9"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_Ws_AddOne9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+                <LinearLayout
+                    android:id="@+id/linNoTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<Spinner
+                        android:id="@+id/spn_Ws_Sale6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spn_Ws_Add_SparPart6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />-->
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spn_Ws_Add_SubSparPart10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+
+                  <!--  <EditText
+                        android:id="@+id/edt_Ws_Add_SubPart10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Code"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_Ws_Add_SubPart10"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Part Code"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <Button
+                            android:id="@+id/btnpo10"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="ok"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Part Number" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_PartNumber10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Part Number"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_Quantity10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Quantity"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Rate Display" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_RateDisplay10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Rate Display"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Price" />-->
+
+                    <EditText
+                        android:id="@+id/edt_Ws_Add_QMultiR10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Total Price"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/img_Ws_AddOne10"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+                </LinearLayout>
+
+                <!--*************************************************************-->
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/Btn_Ws_Add_Next"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button"
+                        android:text="Next"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp" />
+
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/Btn_Ws_Add_Next_alpesh"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button"
+                        android:text="Next"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/Btn_Ws_Add_Cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cancel_btn_background"
+                        android:text="Cancel"
+                        android:textSize="18dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

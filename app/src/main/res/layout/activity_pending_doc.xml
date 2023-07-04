@@ -1,0 +1,1982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDeliveryUpload.PaymentPending.PendingDocActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="Agreement Details"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp" />-->
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Booking No"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingNo_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Booking No"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Booking Type"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingType_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Booking Type"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Booking Date"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingDate_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Booking Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Booking Login Name"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingLoginName_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Login Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- ****************************************************    -->
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="Customer Details"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp"
+                     />-->
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="First Name"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_Fname_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter First Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Last Name"
+                     android:layout_marginTop="10dp"
+                     android:visibility="gone"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_LastName_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Last Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Surname"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_Surname_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Surname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Mobile No"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_MobileNo_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Mobile No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="WhatsApp No"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_WhatsappNo_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter WhatsApp No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Reference Name"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_ReferenceName_PenDoc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Reference Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Reference No"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_ReferenceNo_PenDoc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Reference No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+
+
+                <!--  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="State"
+                      android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_State_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter State"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_City_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter City"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="District"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_District_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter District"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Taluko"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_Taluko_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Taluko"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Village"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_Village_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Village"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Employee Name"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_EmployeName_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Employee Name"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Pass Book"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_PassBook_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Pass Book(Yes/No)"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Book"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_ChequeBook_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Cheque Book(Yes/No)"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Option"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CD_PaymentOption_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Payment Option"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_Booking_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_UploadBookingPhoto_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Booking Photo" />
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_AdharCard_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_AdharCard_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload AadharCard Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_AdharCard_PenDoc2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_AdharCard_PenDoc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload AadharCard Photo2" />
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_ElectionCard_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_ElectionCard_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Election Card Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_ElectionCard_PenDoc2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_ElectionCard_PenDoc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Election Card Photo2" />
+
+                </LinearLayout>
+
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_PassportSize_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_PassportSize_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload 7/12 8a Size Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_PassportSize_PenDoc2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_PassportSize_PenDoc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload 7/12 8a Size Photo2" />
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="Product Details"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp"
+                     />-->
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Purchase Name"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PD_PurchaseName_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Purchase Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Model Name"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PD_ModelName_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Model Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Description"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PD_Description_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Product Description"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="Price Details"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp"
+                     />-->
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Deal Price"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PriceD_price_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Deal Price"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deal  In World"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PriceD_priceInWord_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Deal Price In word"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PriceD_GST_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="GST"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="RTO Details"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp"
+                     />-->
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoMain_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:id="@+id/txtRTOTax"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="RTO Tax"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoTax_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter RTO Tax"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:id="@+id/txtRTOPassing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO Passing"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoPassing_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter RTO Passing"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+
+                    />
+
+
+                <!-- <TextView
+                     android:id="@+id/txtInsurance"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Insurance"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_Insurance_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Insurance"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:id="@+id/txtAgentFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agent Fees"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_AgentFees_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Agent Fees"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:id="@+id/txtNumberPlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number Plat"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_NumberPlat_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Number Plat"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:id="@+id/txtLoanCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Charge"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_RTO_LoanCharge_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Loan Charge"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Down Payment Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />-->
+
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Booking Amount"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_BookingAmount_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Booking Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:id="@+id/txtDPCashAmount_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Cash Amount"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_CashAmount_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Cash Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:id="@+id/txtDPBankOption_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Bank Option"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_BankOption_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Bank Option"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:id="@+id/txtDPChequeDate_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Cheque Date"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_ChequeDate_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Cheque Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:id="@+id/txtDPChequeAmount_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Cheque Amount"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_ChequeAmount_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Cheque Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_cheque_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_Cheque_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadCheque_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Cheque Photo" />
+
+                </LinearLayout>
+
+                <!--  *******************************************  -->
+
+
+                <!--  *******************************************  -->
+
+
+                <!-- <TextView
+                     android:id="@+id/txtDPNEFT_RTGSdate_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="NEFT/RTGS date"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_NEFT_RTGS_date_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter NEFT/RTGS Date"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:id="@+id/txtDPNEFT_RTGSAmount_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="NEFT/RTGS Amount"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_NEFT_RTGSAmount_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter NEFT/RTGS Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_NEFT_RTGS_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_NEFT_RTGS_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadNEFT_RTGS_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload NEFT/RTGS Photo" />
+
+                </LinearLayout>
+
+                <!--  *******************************************  -->
+
+                <!-- <TextView
+                     android:id="@+id/txtDPMake_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Make"
+                     android:layout_marginTop="10dp"/>-->
+
+
+                <EditText
+                    android:id="@+id/edt_DownP_SelectMake_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Make Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <!--  <TextView
+                      android:id="@+id/txtDPModelName_PenDoc"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Model Name"
+                      android:layout_marginTop="10dp"/>-->
+
+
+                <EditText
+                    android:id="@+id/edt_DownP_ModelVehicle_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Model Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:id="@+id/txtDPManufectureYear_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manufacture Year"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_ManufactureYear_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Manufacture Year"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:id="@+id/txtDPOldAmount_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Old Amount"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_oldAmount_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Old  Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <!--<TextView
+                    android:id="@+id/txtDPPaperExpense_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Expense"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_PaperExchange_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Paper Expense"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- <TextView
+                     android:id="@+id/txtDPOldTractorAmount_PenDoc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Old Tractor Amount"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_oldTractorAmount_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Old Tractor Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:id="@+id/txtDPNoc_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noc"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_DownP_NOC_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Noc"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_NocPhoto_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_NocPhoto_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadNocPhoto_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload NOC Photo" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_OldVehicle_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_OldVehicle_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadOldVehicle_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Old Vehicle Photo" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Rcbook_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_RcBook_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadRCBook_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload RCBook Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Rcbook_PenDoc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_RcBook_PenDoc2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadRCBook_PenDoc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload RCBook Photo" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Election_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_ElectionPhoto_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadElectionPhoto_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Election Card Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Election_PenDoc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_ElectionPhoto_PenDoc2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadElectionPhoto_PenDoc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Election Card Photo2" />
+
+                </LinearLayout>
+
+
+                <!-- ***************Consumer Detail******************************** -->
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="Consumer Skim"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp" />-->
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer Skim"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CS_ConsumerSkim_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Consumer Skim"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_ConsumerSkim_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Hood"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CS_Hood_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Hood"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Top Link"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CS_TopLink_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Top Link"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Draw Bar"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CS_DrawBar_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Draw Bar"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tool Kit"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CS_ToolKit_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Tool Kit"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bumper"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CS_Bumper_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Bumper"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Hitch"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CS_Hitch_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Hitch"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Description"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_CS_Description_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Consumer Skim Description"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- *******************Loan Detail********************** -->
+
+                <LinearLayout
+                    android:id="@+id/lin_Loan_PenDoc_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--  <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="30dp"
+                          android:layout_marginTop="10dp"
+                          android:text="Loan Details"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:textColor="@color/colorPrimary"
+                          android:textSize="20dp" />-->
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Retail Executive Form"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_REF_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Retail Executive Form"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Finance Form"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_FinanceForm_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Retail Executive Form"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan Amount"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_LoanAmount_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Loan Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan Sanction Amount"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_LoanSancAmont_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Loan Sanction Amount"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan Charge"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_LoanCharge_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Loan Charge"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Land Detail"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_LandDetail_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Land Detail"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Cibil Score"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_CibilScore_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cibil Score"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fi Date"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_FiDate_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Fi date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp"
+
+                        />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sanction Date"
+                        android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_SanctionDate_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Sanction Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stage"
+                        android:layout_marginTop="10dp"/>-->
+
+
+                    <EditText
+                        android:id="@+id/edt_PenDocDetail_Stage_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Stage"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_LoanDetail_BankpassBook_PenDoc"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_LoanDetail_BankPassBook_PenDoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Bank PassBook Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_LoanDetail_BankpassBook_PenDoc2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_LoanDetail_BankPassBook_PenDoc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Bank PassBook Photo2" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_LoanDetail_Cheque_PenDoc"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_LoanDetail_Cheque_PenDoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Cheque Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_LoanDetail_SarpanchID_PenDoc"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_LoanDetail_SarpanchId_PenDoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Sarpnach ID Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_LoanDetail_SignatureVerifi_PenDoc"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_LoanDetail_SignatureVeri_PenDoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Signatire Vartification Photo" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_cashLoan_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--  <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="30dp"
+                          android:layout_marginTop="10dp"
+                          android:text="Cash Details"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:textColor="@color/colorPrimary"
+                          android:textSize="20dp" />-->
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Date"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CashDetail_Date_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Amount"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CashDetail_Amount_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Description"
+                         android:layout_marginTop="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/edt_CashDetail_Description_PenDoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Description"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+
+                <!-- *******************Delivery Detail********************** -->
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="10dp"
+                     android:text="Delivery Details"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="20dp" />-->
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Tyre"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_Type_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Tyre"
+                    android:paddingLeft="10dp" />
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Battery"
+                    android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_Bettry_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Battery"
+                    android:paddingLeft="10dp" />
+
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Delivery Date"
+                     android:layout_marginTop="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/edt_PenDocDate_PenDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Delivery Date"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_PenDocPhoto_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_PenDocPhoto_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload Delivery Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ChesisPrint_PenDoc"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_ChesisPrint_PenDoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Upload ChesisPrint Photo" />
+
+                </LinearLayout>
+
+
+                <!-- ******************************************************** -->
+
+                <Button
+                    android:id="@+id/btn_PenDoc_Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

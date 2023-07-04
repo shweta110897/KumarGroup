@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".BookingDeliveryUpload.Add.CustomerSkimActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_page"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_ConsumerSkim1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <EditText
+                    android:id="@+id/edt_CustomerSkim_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Description"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    android:id="@+id/edt_CustomerSkim_Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Amount"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_ConsumerSkim"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_Hood"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_Toplink"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_DrawBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_ToolKit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_Bumper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                <Spinner
+                    android:id="@+id/spn_CustomerSkim_Hitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+                //new
+                <Spinner
+                    android:id="@+id/spn_referral_Skim"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/edt_referral_referral_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Referral Name"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    android:id="@+id/edt_referral_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Mobile no"
+                    android:maxLength="10"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    android:id="@+id/edt_referral_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Description"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    android:id="@+id/edt_referral_Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Amount"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/btn_AddRto_Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

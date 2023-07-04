@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:id="@+id/data_recyclersalesinfo"
+    tools:context=".AdapterFoSalesInfo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSalarySlip"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:text="Kumar Group"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSalarySlipNo"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:text="7505786792"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSalarySlipReportGenarate"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:text="Report Generated On"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSalarySlipReportGenDate"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tvSalarySlipReportDisDate"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Reportdate"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:text="Employee Details"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp">
+
+          <TextView
+              android:textSize="15sp"
+              android:textColor="@color/colorBlack"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:background="@drawable/cell_shape"
+              android:text="Employee Name"
+              android:layout_height="wrap_content"
+              android:layout_column="1"/>
+
+
+          <TextView
+              android:id="@+id/tvSalarySlipName"
+              android:textSize="15sp"
+              android:textColor="@color/colorBlack"
+              android:background="@drawable/cell_shape"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:layout_height="wrap_content"
+              android:layout_column="2"/>
+
+
+      </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:text="Employee Type"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipEmployeeType"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:text="Phone Number"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipMobile"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tvSalarySlipReportDisDate1"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Reportdate"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="17sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:text="Payment and Salary"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:text="Date"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Amount"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSalarySlipPSDate"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipIPayout"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TextView
+        android:textSize="17sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:text="Attendance Summary"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSalarySlipPresent"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:text="Present"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipAbsent"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Absent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSalarySlipLocation_fine"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Location Fine"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipUniform_fine"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Uniform Fine"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:layout_height="wrap_content"
+                android:layout_column="1"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipIcard_fine"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Icard Fine"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipExtraPayment"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="ExtraPayment"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+
+            <TextView
+                android:id="@+id/tvSalarySlipTotal"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/cell_shape"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Total:"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

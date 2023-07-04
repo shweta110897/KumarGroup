@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Inquiry.InquiryMainActivity"
+    android:background="@color/colorBackground">
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/layout_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/enable_page"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+              <TextView
+                  android:visibility="gone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="-----" />
+
+              <TextView
+                  android:visibility="gone"
+                  android:id="@+id/txt8"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:background="@drawable/disable_page"
+                  android:gravity="center"
+                  android:text="8"
+                  android:textColor="@color/colorWhite"
+                  android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_page"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtInquiryGeneralVisit"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="General Visit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txtInquiryVGenral"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Schedule Inquiry "
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtInquiryVMonthly"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Monthly Inquiry "
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtInquiryVWeekly"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Weekly Inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtInquiryVDaily"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Daily Inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txtInquiryDealstage"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Deal stage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txtInquiryVillageList"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="village List"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/InqAgeing"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Ageing"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/viewInquiryIDMUnit"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="IDM Unit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/ViewInqPerformance"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Performance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

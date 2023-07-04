@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportCollection.RCNewEntryFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/edtRcNewEntryCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Category Name"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtRcNewEntryEmployeeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Emp Name "
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp" />
+
+
+                    <EditText
+                        android:id="@+id/edtRcNewEntryVisitReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Visit Reason"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spnRcNewEntryBooking"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/edtRcNewEntryBookAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Booking Amount"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spnRcNewEntryDelivery"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/edtRcNewEntryModelName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"                    android:hint="Model Name"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spnRcNewEntryPaymentCollection"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edtRcNewEntryPaymentCollection"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Amount"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"/>
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spnRcNewEntryAddgcust"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/spnRcNewEntrySellLost"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/edtRcNewEntrySellLost"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Sell lost Model Name"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/edtRcNewEntrySetVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Next Visit"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/locationget"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linner_number_plate"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_Customer_visit"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/edittext"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/txt_Customer_visit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:text="Customer Visit Photo" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btngetLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button"
+                        android:text="Get Location"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btnRcNewEntrySubmit"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

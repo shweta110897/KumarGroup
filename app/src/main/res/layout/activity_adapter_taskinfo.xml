@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardwhite"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/data_recyclerTask"
+    tools:context=".AdapterTaskinfo">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_Customer_name"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                />
+
+            <TextView
+                android:id="@+id/tv_mobile_nocustomer"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_village"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/lin_callcustomer"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lin_whappcustomer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whapppng"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lin_smscustomer"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:background="@drawable/sms"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lin_replace"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/replace"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello msg"
+        android:id="@+id/txtvhide"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

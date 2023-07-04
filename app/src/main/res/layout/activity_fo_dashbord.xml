@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoDashbord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgsonalika4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_round"
+                    android:gravity="center"
+                    android:text="Kumar Group"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_round"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.3">
+
+                  <!--      <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/app_icon"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp" />
+-->
+                          <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/nofound"
+                            app:civ_border_width="5dp"
+                            app:civ_border_color="@color/Yellow"/>
+
+
+                        <TextView
+                            android:id="@+id/emp_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="85dp"
+                            android:background="@color/Yellow"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Level-1" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.7"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/emp_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:text="Name"
+                                android:textColor="@color/txt_red"
+                                android:textSize="18dp" />
+
+
+                            <ImageView
+                                android:id="@+id/iv_profileshare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/ic_share"
+                                app:tint="@color/green" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/emp_uniq_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:text="ID"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/emp_designation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:text="Designation"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/textGrid"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <RelativeLayout
+                            android:background="@drawable/custom_input1"
+                            android:layout_weight="0.85"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_rank"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="Officer Rank"
+                                android:paddingLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <!--<RatingBar
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/tv_rank"
+                                android:id="@+id/emp_rate"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:numStars="5"
+                                android:stepSize="0.5"
+                                android:rating="0"
+                                android:theme="@style/RatingBar"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                />-->
+
+                            <RatingBar
+                                android:layout_marginLeft="30dp"
+                                android:theme= "@style/RatingBar"
+                                android:id="@+id/emp_rate"
+                                android:scaleX="0.5"
+                                android:scaleY="0.5"
+                                android:stepSize="0.5"
+                                android:numStars="5"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                        <View
+                            android:layout_toLeftOf="@id/emp_rank"
+                            android:background="@color/gray"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+
+
+                        <RelativeLayout
+                            android:background="@drawable/custom_input2"
+                            android:layout_weight="0.15"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/emp_rank"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:text="4.3"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:textColor="@color/colorPrimaryDark" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="20dp"
+                android:text="FO Dashboard"
+                android:textColor="@android:color/white"
+                android:textSize="34sp" />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/textGrid"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_mobile_number"
+                    android:layout_weight="0.85"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_input1"
+                    android:drawableStart="@drawable/custom_phone_icon"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <RelativeLayout
+                    android:background="@drawable/custom_input2"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Search"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_search_black_24dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridView
+            android:paddingTop="5dp"
+            android:numColumns="3"
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

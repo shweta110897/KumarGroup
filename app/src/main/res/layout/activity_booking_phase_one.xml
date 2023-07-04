@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDeliveryUpload.Booking.BookingPhaseOneActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Agreement Details"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking No"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                   />
+
+                <TextView
+                    android:id="@+id/txtBPType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Type"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Type"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Login Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_ADBooking_BookingLoginName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Login Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <!-- ****************************************************    -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Customer Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_Fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter First Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_LastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Last Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:visibility="gone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Surname"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_CD_Surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Surname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_MobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_WhatsappNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="WhatsApp No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:visibility="gone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reference Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_CD_ReferenceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Reference Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:visibility="gone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reference No"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:visibility="gone"
+
+                    android:id="@+id/edt_CD_ReferenceNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Reference No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter State"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter City"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="District"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_District"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter District"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Taluko"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_Taluko"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Taluko"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Village"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_Village"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Village"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_EmployeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Employee Name"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtBPPassBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pass Book"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_PassBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Pass Book"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtBPChequeBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Book"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_ChequeBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Cheque Book"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Option"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CD_PaymentOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Payment Option"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Reference Name"
+                    android:layout_marginTop="10dp"/>-->
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_Booking"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_UploadBookingPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Booking Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_AdharCard"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_AdharCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload AadharCard Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_AdharCard2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_AdharCard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload AadharCard Back Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_ElectionCard"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_ElectionCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_ElectionCard2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_ElectionCard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+
+                <!-- ********************************************  -->
+
+                <!-- ********************************************  -->
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_PassportSize"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_PassportSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload 7/12 8a Size Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_CD_PassportSize2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_CD_PassportSize2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload 7/12 8a Size Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!-- ********************************************  -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Purchase Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PD_PurchaseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Purchase Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PD_ModelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Model Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PD_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Price Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deal Price"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PriceD_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Deal Price"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deal  In World"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PriceD_priceInWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Deal Price In word"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_PriceD_GST"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="GST"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="RTO Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtRTOTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO Tax"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO Tax"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtRTOPassing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RTO Passing"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_RtoPassing"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="RTO Passing"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                   />
+
+
+                <TextView
+                    android:id="@+id/txtInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_Insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Insurance"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtAgentFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agent Fees"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_AgentFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Agent Fees"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtNumberPlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number Plat"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_NumberPlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Number Plat"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtLoanCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Charge"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_RTO_LoanCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Loan Charge"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Down Payment Details"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_BookingAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Booking Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPCashAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Amount"
+                    android:layout_marginTop="10dp"/>
+
+                 <EditText
+                    android:id="@+id/edt_DownP_CashAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Cash Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPBankOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Option"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_BankOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Bank Option"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPChequeDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_ChequeDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint=" Cheque Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPChequeAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_ChequeAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Cheque Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_dp_cheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_Cheque"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadCheque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Cheque Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!--  *******************************************  -->
+
+
+                <!--  *******************************************  -->
+
+
+                <TextView
+                    android:id="@+id/txtDPNEFT_RTGSdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEFT/RTGS date"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_NEFT_RTGS_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter NEFT/RTGS Date"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPNEFT_RTGSAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEFT/RTGS Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_NEFT_RTGSAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter NEFT/RTGS Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_NEFT_RTGS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_NEFT_RTGS"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadNEFT_RTGS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload NEFT/RTGS Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <!--  *******************************************  -->
+
+                <TextView
+                    android:id="@+id/txtDPMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edt_DownP_SelectMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Make Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPModelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Name"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edt_DownP_ModelVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Model Name"
+                    android:inputType="text"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPManufectureYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manufacture Year"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_ManufactureYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Manufacture Year"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPOldTractorAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Old Tractor Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_oldTractorAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Old Tractor Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPPaperExpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Expense"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_PaperExchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Paper Expense"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDPOldAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Expense Amount"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_oldAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter Paper Expense  Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtDPNoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noc"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_DownP_NOC"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Noc"
+                    android:background="@drawable/edittext"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_NocPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_NocPhoto"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadNocPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload NOC Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_OldVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_OldVehicle"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadOldVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Old Vehicle Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Rcbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_RcBook"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadRCBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload RCBook Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Rcbook2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_RcBook2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadRCBook2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload RCBook Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Election"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_ElectionPhoto"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadElectionPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_dp_Election2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DownP_ElectionPhoto2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext" />
+
+                    <TextView
+                        android:id="@+id/txt_DownP_UploadElectionPhoto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Election Card Photo2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Consumer Skim"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer Skim"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_ConsumerSkim"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Consumer Skim"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_cs_Hood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hood"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Hood"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Hood"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_cs_TopLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top Link"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_TopLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Top Link"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_cs_Drawbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Draw Bar"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_DrawBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Draw Bar"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_cs_ToolKit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tool Kit"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_ToolKit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Tool Kit"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_cs_Bumper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bumper"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Bumper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Bumper"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_cs_Hitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hitch"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Hitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Hitch"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_cs_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/edt_CS_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <Button
+                    android:id="@+id/btn_BookingPhase_Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</LinearLayout>

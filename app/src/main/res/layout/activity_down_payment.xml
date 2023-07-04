@@ -1,0 +1,1806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+     android:orientation="vertical"
+    tools:context=".BookingDeliveryUpload.Add.DownPaymentActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/enable_page"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/disable_page"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/disable_page"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_page"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- first Data -->
+
+                <LinearLayout
+                    android:id="@+id/Lin_Downp_OneData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spn_DownPayment_BAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+
+                        <ImageView
+                            android:id="@+id/imgDownPayment_AddOne"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_add_24" />
+
+                    </LinearLayout>
+
+
+                    <!-- <Spinner
+                         android:id="@+id/spn_DownPayment_BAmount"
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:layout_marginTop="10dp"
+                         android:background="@drawable/edittext"
+                         android:padding="10dp"
+                         android:paddingLeft="10dp"
+                         android:singleLine="true" />-->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_CashAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_BankOpt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_cheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_Cheque"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadCheque"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Cheque Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGS_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Date"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGSAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Amount"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NEFT_RTGS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NEFT_RTGS"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNEFT_RTGS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NEFT/RTGS Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_SelectMake"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_ModelVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ManufactureYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Manufacture Year"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old  Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_PaperEnhance"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldTractorAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old Tractor Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_NOC"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NocPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NocPhoto"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNocPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NOC Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_OldVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_OldVehicle"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadOldVehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Old Vehicle Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo2" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Second Data -->
+
+                <LinearLayout
+                    android:id="@+id/Lin_Downp_twoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spn_DownPayment_BAmount_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+
+                        <ImageView
+                            android:id="@+id/imgDownPayment_AddTwo_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_add_24" />
+
+                    </LinearLayout>
+
+
+                    <!-- <Spinner
+                         android:id="@+id/spn_DownPayment_BAmount"
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:layout_marginTop="10dp"
+                         android:background="@drawable/edittext"
+                         android:padding="10dp"
+                         android:paddingLeft="10dp"
+                         android:singleLine="true" />-->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_CashAmount_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_BankOpt_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeDate_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeAmount_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_cheque_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_Cheque_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadCheque_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Cheque Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGS_date_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Date"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGSAmount_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NEFT_RTGS_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NEFT_RTGS_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNEFT_RTGS_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NEFT/RTGS Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_SelectMake_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_ModelVehicle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ManufactureYear_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Manufacture Year"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldAmount_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old  Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_PaperEnhance_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldTractorAmount_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old Tractor Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_NOC_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NocPhoto_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NocPhoto_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNocPhoto_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NOC Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_OldVehicle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_OldVehicle_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadOldVehicle_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Old Vehicle Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook2_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo2" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto2_2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Third Data -->
+
+                <LinearLayout
+                    android:id="@+id/Lin_Downp_thirdData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spn_DownPayment_BAmount_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+
+                        <ImageView
+                            android:id="@+id/imgDownPayment_AddTwo_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_add_24"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                    <!-- <Spinner
+                         android:id="@+id/spn_DownPayment_BAmount"
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:layout_marginTop="10dp"
+                         android:background="@drawable/edittext"
+                         android:padding="10dp"
+                         android:paddingLeft="10dp"
+                         android:singleLine="true" />-->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_CashAmount_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_BankOpt_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeDate_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeAmount_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_cheque_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_Cheque_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadCheque_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Cheque Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGS_date_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Date"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGSAmount_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Amount"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NEFT_RTGS_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NEFT_RTGS_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNEFT_RTGS_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NEFT/RTGS Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_SelectMake_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_ModelVehicle_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ManufactureYear_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Manufacture Year"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_Registeration_Number_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Registration Number "
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldAmount_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old  Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_PaperEnhance_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldTractorAmount_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old Tractor Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_RCBOOK"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_OwnerKYC"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_Loan4Close"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_NOC_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NocPhoto_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NocPhoto_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNocPhoto_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NOC Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_OldVehicle_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_OldVehicle_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadOldVehicle_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Old Vehicle Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook2_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook2_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo2" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto2_3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto2_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- Fourth Data-->
+                <LinearLayout
+                    android:id="@+id/Lin_Downp_FourthData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spn_DownPayment_BAmount_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+
+                        <!--<ImageView
+                            android:id="@+id/imgDownPayment_AddTwo_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_add_24" />-->
+
+                    </LinearLayout>
+
+
+                    <!-- <Spinner
+                         android:id="@+id/spn_DownPayment_BAmount"
+                         android:layout_width="match_parent"
+                         android:layout_height="50dp"
+                         android:layout_marginTop="10dp"
+                         android:background="@drawable/edittext"
+                         android:padding="10dp"
+                         android:paddingLeft="10dp"
+                         android:singleLine="true" />-->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_CashAmount_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cash Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_BankOpt_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeDate_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Date"
+                        android:inputType="date"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ChequeAmount_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Cheque Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_cheque_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_Cheque_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadCheque_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Cheque Photo" />
+
+                    </LinearLayout>
+
+                    <!--  *******************************************  -->
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGS_date_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Date"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_NEFT_RTGSAmount_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter NEFT/RTGS Amount"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NEFT_RTGS_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NEFT_RTGS_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNEFT_RTGS_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NEFT/RTGS Photo" />
+
+                    </LinearLayout>
+
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_SelectMake_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_ModelVehicle_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_ManufactureYear_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Manufacture Year"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldAmount_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old  Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_PaperEnhance_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <EditText
+                        android:id="@+id/edt_DownPayment_oldTractorAmount_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Old Tractor Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spn_DownPayment_NOC_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_NocPhoto_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_NocPhoto_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadNocPhoto_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload NOC Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_OldVehicle_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_OldVehicle_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadOldVehicle_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Old Vehicle Photo" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Rcbook2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_RcBook2_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadRCBook2_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload RCBook Photo2" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_dp_Election2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_DownPayment_ElectionPhoto2_4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext" />
+
+                        <TextView
+                            android:id="@+id/txt_DownPayment_UploadElectionPhoto2_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:text="Upload Election Card Photo2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Button Next -->
+                <Button
+                    android:id="@+id/btn_DownPayment_Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

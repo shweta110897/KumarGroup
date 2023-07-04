@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linPaymentMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardwhite"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--  <TableLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp">
+
+                  <TableRow
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_column="1"
+                          android:layout_weight="1"
+                          android:background="@drawable/cell_shape"
+                          android:gravity="center"
+                          android:text="Booking No:"
+                          android:textColor="@color/colorBlack"
+                          android:textSize="15sp" />
+
+                      <TextView
+                          android:id="@+id/tv_PaymentWS_Payment"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_column="2"
+                          android:layout_weight="1"
+                          android:background="@drawable/cell_shape"
+                          android:gravity="center"
+                          android:textColor="@color/colorBlack"
+                          android:textSize="15sp" />
+
+
+                  </TableRow>
+              </TableLayout>-->
+
+            <!-- ********************************************************* -->
+
+            <TextView
+                android:id="@+id/tv_fname_PaymentWS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cell_shape"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_mobile_no_PaymentWS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/cell_shape"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_Village_PaymentWS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/cell_shape"
+                android:paddingStart="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_Taluko_PaymentWS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/cell_shape"
+                android:paddingStart="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_District_PaymentWS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/cell_shape"
+                android:paddingStart="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <!-- ********************************************************* -->
+
+
+            <!-- <TextView
+                 android:id="@+id/tv_DModelNm_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_EngineNo_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_Variants_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_ChasisNo_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_Battery_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_Tyre_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_FinanceForm_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:paddingStart="5dp"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp" />-->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:text="Rs"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:text="Debit"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_DealPrice_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_DeliveryDate_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Description_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_other_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_other_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_other_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <!-- <TableRow
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:id="@+id/tv_cmt_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:id="@+id/tv_cpdelivery_date_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="2"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:id="@+id/tv_cudesc_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="2"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                 </TableRow>-->
+
+                <!--<TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_Ref_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Ref_date_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_RefDesc_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>-->
+
+            </TableLayout>
+
+            <!-- ******************************************************************** -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:text="Rs"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:text="Credit"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_cashAmount_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cashDate_PaymentWSWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_CashDesc_PaymentWSWs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_Ref1_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Refdate_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_Refdesc_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_chequeAmount_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ChequeDate_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_ChequeDesc_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_neft_rtgs_amt_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_neft_rtgs_date_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_neft_rtgs_desc_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <!-- <TableRow
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:id="@+id/tv_cashAmt_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:id="@+id/tv_cashDate_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+
+                     <TextView
+                         android:id="@+id/tv_cashDesc_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                 </TableRow>-->
+
+
+                <!--<TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_LoanAmt_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_LoanDate_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_LoanDesc_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>-->
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ExPrice1_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ExDate1_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_ExDesc1_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ExPrice2_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ExDate2_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_ExDesc2_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ExPrice3_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ExDate3_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_ExDesc3_PaymentWS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <!-- <TableRow
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:id="@+id/tv_UPrice_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:id="@+id/tv_Udate_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+
+                     <TextView
+                         android:id="@+id/tv_UDesc_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                 </TableRow>-->
+
+                <!-- <TableRow
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:id="@+id/tv_UPrice1_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:id="@+id/tv_Udate1_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+
+                     <TextView
+                         android:id="@+id/tv_UDesc1_PaymentWS"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_weight="1"
+                         android:background="@drawable/cell_shape"
+                         android:gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="15sp" />
+
+                 </TableRow>-->
+
+
+
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_work_com_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_work_com_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_work_com_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_work_de_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_work_de_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_work_de_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_cash_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_cash_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_cash_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_che_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_che_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_che_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_nert_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_nert_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_work_cu_nert_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <!-- ******************************************************************** -->
+
+
+            <!-- <TextView
+                 android:id="@+id/tv_Price_PaymentWS"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="1dp"
+                 android:background="@drawable/cell_shape"
+                 android:textColor="@color/colorBlack"
+                 android:textSize="15sp"
+                 android:paddingStart="5dp"
+                 />-->
+
+            <TextView
+                android:id="@+id/tv_TP_PaymentWS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cell_shape"
+                android:paddingStart="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

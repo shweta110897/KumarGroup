@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SmartCard.AddPointValueSecondActivity"
+    android:background="@color/colorBackground">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category Name:"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/edt_categoryNameAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Category Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name:"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_FnameNameAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State:"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/edt_StateAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Last Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City:"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_CityAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Last Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="District:"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/edt_DistrictAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter District"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taluko:"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/edt_TalukoAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Tehsil"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Village:"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_VillageAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Village"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile No:"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_mobile_numberAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WhatsApp No:"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/edt_whatsapp_numberAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Enter Whatsapp Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee Name:"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/edt_EmployeeName_APVS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Employee Name"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+
+            <Button
+                android:id="@+id/btn_SubmitAPVS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    
+
+</LinearLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:background="@color/colorBackground"
+    android:padding="10dp"
+    tools:context=".Wallet">
+
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:id="@+id/layout_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/enable_page"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---" />
+
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/disable_page"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_page"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Attandance"
+                android:id="@+id/tv_Attandance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Salery Slip"
+                android:id="@+id/tv_saleryslip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_loan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Loan Request"
+                android:textSize="20sp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Incentive (Add Inquiry)"
+                android:id="@+id/tv_Insensitive"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Incentive (Delivery)"
+                android:id="@+id/tv_DelInsensitive"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_wallet_CategoryPermission"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Category Permission"
+                android:textSize="20sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Maintenance"
+                android:id="@+id/tv_Maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Over Time"
+                android:id="@+id/tv_OverTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Traveling"
+                android:id="@+id/tv_Travelling"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Account Ladger"
+                android:id="@+id/tv_ac_ledger"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Payment Collection"
+                android:id="@+id/tv_pay_collection"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+            <TextView
+                android:visibility="gone"
+                android:textSize="25sp"
+                android:textColor="@color/snack_red"
+                android:gravity="center"
+                android:text="Your Next Day Task IN Progress.. \n Waiting For Next Update.  "
+                android:id="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

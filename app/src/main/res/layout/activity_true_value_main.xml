@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrueValue.TrueValueMainActivity"
+    android:background="@color/colorBackground">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_delivery"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_delivery"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Delivery"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_service"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_service"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Service and Complaint"
+                        android:padding="10dp"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_walking"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+                    <TextView
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/tv_walking"
+                        android:background="@drawable/edittext"
+                        android:text="Walking Visit"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_numberplate"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_numberplate"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Number Plate Fitting"
+                        android:padding="10dp"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_newvisit"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/tv_newvisit"
+                        android:background="@drawable/edittext"
+                        android:text="New Visit"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_activity"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/tv_activity"
+                        android:background="@drawable/edittext"
+                        android:text="Activities"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_firstmetting"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_firstmeetingReview"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="First Meeting"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_cold"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_coldReview"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Cold Inquiry"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_warm"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_WarmReview"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Warm Inquiry"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_hot"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_HotReview"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Hot Inquiry"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_selllost"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_SellLost"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Sell/Lost"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_count_drop"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="0"
+                        android:background="@drawable/button"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_drop"
+                        android:visibility="visible"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/edittext"
+                        android:text="Drop Inquiry"
+                        android:padding="10dp"
+                    />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_TrueValueMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/mobile_unfocus_black"
+                    android:drawablePadding="5dp"
+                    android:hint="Enter Mobile No"
+                    android:padding="5dp"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+
+                <Button
+                    android:id="@+id/btnTrueValueSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textSize="18dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

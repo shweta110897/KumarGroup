@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    android:id="@+id/newdesign_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/LinShowDetailRcGv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/delivery_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="Delivery Date : 21-10-18"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_category_it_show_rc_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/delivery_date"
+                    android:layout_toLeftOf="@id/new_design"
+                    android:text="1. Mark - sample lead"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/new_design"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/new_color_design"
+                    android:padding="1dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name_show_rc_gv"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:text="+1 202 555 0145 support@pipecycleCRM.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_village_show_rc_gv"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:text="+1 202 555 0145 support@pipecycleCRM.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_mobile_no_show_rc_gv"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:text="9999999999"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:text="Model Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/model_added"
+                    android:textColor="@color/snack_red"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text="Model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/source_ofinquire"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:text="Source of Inquire : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/added_days"
+                    android:textColor="#E57373"
+                    android:text="Added : 20 Day"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/latactivity"
+                    android:textColor="#E57373"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ringid"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectangel_line"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#4FC3F7"
+                        android:text="Current Stage"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="#4FC3F7"
+                        android:text="Followup Person"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview_current_stage"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/employe_name_ink"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#4FC3F7"
+                        android:text="Follow Type"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="#4FC3F7"
+                        android:text="Next Reminder"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/follow_type"
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:id="@+id/tv_NextDate_show_rc_gv"
+                        android:text="19th oct 2021 @ 09:02 AM"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resentNote"
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#4FC3F7"
+                    android:text="Recent Notes :"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_district_show_rc_gv"
+                    android:text="Last Active Today"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image_button"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/remider"
+                        android:src="@drawable/calander_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/design_deal"
+                        android:visibility="gone"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/deallogo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/addfile"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_baseline_attachment_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtremider"
+                        android:textSize="12dp"
+                        android:text="+ Reminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/txtdeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="+ Deal  "
+                        android:visibility="gone"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/file_count"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="+ Files (1)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/lin_MDY_call"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangel_line"
+                    android:layout_weight="1"
+                    android:src="@drawable/call"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+
+                    android:id="@+id/lin_MDY_whapp"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangel_line"
+                    android:layout_weight="1"
+                    android:src="@drawable/whapppng"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+                    android:id="@+id/lin_MDY_sms"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangel_line"
+                    android:layout_weight="1"
+                    android:src="@drawable/sms"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+                    android:src="@drawable/general_visit"
+                    android:id="@+id/homeIcon"
+                    android:background="@drawable/rectangel_line"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/hot_cold_harm"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="330dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerProfileData.VisitSearchActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/colorWhite">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/btn_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button"
+                        android:text="Add Record"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Category Name:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_categoryName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Category Name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="First Name:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_FnameName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter First Name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_LastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Last Name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="State:"
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_State"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Last Name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_City"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Last Name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="District:"
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_District"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter District"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Taluko:"
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_Taluko"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Tehsil"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Village:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_Village"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Village"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maker:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <Spinner
+                            android:id="@+id/sp_make_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Model Name:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <Spinner
+                            android:id="@+id/sp_model_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tractor Registration No:"
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_TractorRegisterNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter tractor no"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Model MFG Year:"
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_MfgYear_EP"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter MFG Year"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile No:"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Mobile Number"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp No:"
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_whatsapp_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Whatsapp Number"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Description: "
+                            android:layout_marginTop="10dp"
+                            />
+                        <EditText
+                            android:id="@+id/edt_Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:hint="Enter Description"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Inquiry: "
+                            android:layout_marginTop="10dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_inquiry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:drawablePadding="16dp"
+                            android:hint="Select Category"
+                            android:padding="10dp" />
+
+                        <Button
+                            android:id="@+id/btn_Submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

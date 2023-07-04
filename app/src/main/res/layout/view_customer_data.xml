@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardwhite"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linBookingUploadMain">
+
+    <TextView
+        android:padding="3dp"
+        android:background="@drawable/custom_input"
+        android:id="@+id/tv_ProfileCustomer_note"
+        android:textSize="20sp"
+        android:textColor="@color/red_btn_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/deleteItem"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/deleteItem"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_ProfileCustomer_name"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_fname"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_lname"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_state"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_city"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_distric"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_tehsil"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_vilage"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_moblino"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_employee_name"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_whatsappno"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_maker"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_model"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_RegNo"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_mfgYear"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_AddEmp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_AddDate"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_ProfileCustomer_Drop"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:text="Delete"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

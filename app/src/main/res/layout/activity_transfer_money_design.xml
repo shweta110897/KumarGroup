@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#E8F8DD"
+    tools:context=".cashbookAK.TransferMoneyDesignActivity">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/calender"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:hint="Monday,18 October"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:id="@+id/histroy"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:text="History"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="20dp"
+        android:background="#C1F1A0"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/amounttransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C1F1A0"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_baseline_create_24"
+        android:drawablePadding="5dp"
+        android:hint="Note"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/note"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/swaparrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_swap_vert_24" />
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/swaparrow"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/InOut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/sp2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/savecash_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/InOut"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    </RelativeLayout>

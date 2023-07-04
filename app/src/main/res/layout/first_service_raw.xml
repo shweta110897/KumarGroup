@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardwhite"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/Lin_DeliveryReportMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_cat_name_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cat_name"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txt_fname_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="fname"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txt_state_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="state"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txt_city_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="city" />
+
+        <TextView
+            android:id="@+id/txt_district_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="destrict" />
+
+        <TextView
+            android:id="@+id/txt_tehsil_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tehsil"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txt_vilage_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vilage"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:id="@+id/txt_moblino_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="moblino"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txt_whatsappno_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="whatsappno"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txt_employee_name_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="employee_name"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txt_desc_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="desc"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txt_follow_date_fs"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="desc"
+            android:layout_marginTop="5dp" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

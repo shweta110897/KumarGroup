@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#0f82d2</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="colorLoginborder">#b9c8d0</color>
+    <color name="colorButton">#138feb</color>
+    <color name="colorLayout">#81C0EF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBackground">#E7E9EA</color>
+    <color name="colorBlack">#212121</color>
+    <color name="cardbackground">#efefef</color>
+    <color name="colorWhitedark">#FFFFFF</color>
+    <color name="colorcardblue">#e7eefd</color>
+    <color name="colorcardblue1">#E4E7EEFD</color>
+    <color name="snack_red">#8B0000</color>
+    <color name="txt_red">#ee2400</color>
+    <color name="back_red">#fbd9d3</color>
+    <color name="back_green">#cefad0</color>
+    <color name="green">#008631</color>
+    <color name="snack">#383737</color>
+    <color name="iccolorblack">#110F22</color>
+    <color name="iccolorblack1">#568AB7</color>
+    <color name="iccolorblack11">#0A3E6B</color>
+    <color name="iccolorblack111">#4994EC</color>
+    <color name="Green">#148833</color>
+    <color name="Yellow">#F4DD14</color>
+    <color name="gray">#9C9C9B</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black_66">#66000000</color>
+
+
+</resources>

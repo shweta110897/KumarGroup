@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addProfile"
+        android:title="Add Profile" />
+
+    <item
+        android:id="@+id/viewProfile"
+        android:title="View Profile" />
+
+    <item
+        android:id="@+id/editProfile"
+        android:title="Edit Profile" />
+
+    <item
+        android:id="@+id/deleteProfile"
+        android:title="Delete Profile" />
+
+    <item
+        android:id="@+id/complainBox"
+        android:title="Complaint Box" />
+
+    <item
+        android:id="@+id/tv_DocumentBox"
+        android:title="Document Box" />
+
+    <item
+        android:id="@+id/walikgEntry"
+        android:title="Walking Entry" />
+
+    <item
+        android:id="@+id/activity"
+        android:title="Activity" />
+
+    <item
+        android:id="@+id/new_visit"
+        android:title="New VISIT" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/reminder"
+        android:title="Reminder" />
+
+</menu>

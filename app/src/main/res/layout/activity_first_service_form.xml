@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryReport.FirstServiceFormActivity"
+    android:background="@color/colorBackground">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/colorWhite">
+
+
+        <LinearLayout
+            android:id="@+id/LinSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <Spinner
+                android:id="@+id/spn_SelectType_FSForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:paddingLeft="10dp" />
+
+
+            <EditText
+                android:id="@+id/edt_FollowUpDate_FSForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter FollowUp Date"
+                android:inputType="number"
+                />
+
+
+            <EditText
+                android:id="@+id/edt_ServiceDate_FSForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Service Date"
+                android:inputType="number"
+                />
+
+
+            <Spinner
+                android:id="@+id/spn_Mechanic_FSForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edt_ComplianNumber_FSForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:maxLength="10"
+                android:hint="Enter Complain Number"
+                android:inputType="number"
+                />
+
+
+
+            <Button
+                android:id="@+id/btn_Submit_FSForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

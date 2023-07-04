@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Kumar Group</string>
+    <string name="title_activity_payment_ws_main">PaymentWsMainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!--    <string name="google_maps_key">AIzaSyASvOHfq785tKzu3Js3uARicP_k1G5aMTc</string>-->
+    <!--    <string name="google_maps_key">AIzaSyCfyLVy8U7rMnkeW5J-4LsiP9KkOyMnAJA</string>-->
+    <string name="google_maps_key">AIzaSyCfyLVy8U7rMnkeW5J-4LsiP9KkOyMnAJA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_booking">Booking</string>
+    <string name="txt_sell_lost">Sell Lost</string>
+    <string name="txt_delivery">Delivery</string>
+    <string name="txt_stage">Stage</string>
+    <string name="inquiry_closing">Inquiry Closing</string>
+    <string name="performance">Performance</string>
+    <string name="txt_medium">Medium</string>
+    <string name="txt_lower">Lower</string>
+    <string name="txt_very_good">Very Good</string>
+    <string name="txt_note">Note</string>
+    <string name="txt_achievement">Achievement</string>
+    <string name="txt_target">Target</string>
+    <string name="txt_first_meeting">First Meeting</string>
+    <string name="txt_warm">Warm</string>
+    <string name="txt_hot">Hot</string>
+    <string name="txt_inquiry_follow_up">Inquiry Follow-up</string>
+    <string name="txt_new_inquiry">New Inquiry</string>
+    <string name="txt_new_visit">New Visit</string>
+    <string name="txt_data_entry">Data Entry</string>
+    <string name="txt_inquiry_generation">Inquiry Generation</string>
+    <string name="enter_customer_name">Enter Customer Name</string>
+    <string name="enter_customerlast_name">Enter Last Name</string>
+    <string name="enter_model_name">Enter Model Name</string>
+    <string name="enter_customer_number">Enter Customer Number</string>
+    <string name="other_number"> Enter Other Number</string>
+    <string name="enter_description_note">Enter Description/Note</string>
+    <string name="submit">Submit</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="fcm_message">Kumar Group</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="otp_confirm_header">Otp Verification</string>
+    <string name="otp_confirm_message_top">Wait! we are sending an OTP to verify your
+Account to </string>
+    <string name="otp_input_message_top">Please enter your code here</string>
+    <string name="btn_otp_verify">Verify OTP</string>
+
+
+    <string name="seconds_ago">%1$d seconds ago</string>
+
+
+    <!--FOR GET TIME AGO LIKE TWITTER-->
+    <string name="min_ago">%1$d minute ago</string>
+    <string name="mins_ago">%1$d minutes ago</string>
+    <string name="hour_ago">%1$d hour ago</string>requl
+    <string name="new_hours_ago">%1$d hours ago</string>
+    <string name="day_ago">%1$d day ago</string>
+    <string name="new_days_ago">%1$d days ago</string>
+
+
+
+</resources>

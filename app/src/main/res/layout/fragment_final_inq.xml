@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewInquiryDealStage.FinalViewINQ">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/deal_common_search"
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="#228B22"
+                            android:drawableStart="@drawable/ic_common_search"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#fff"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/deal_filtercommon_search"
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="#228B22"
+                            android:drawableStart="@drawable/ic_filter"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#fff"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/deal_filter"
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/deal_common_search"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="#228B22"
+                            android:drawableStart="@drawable/ic_filter_list"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#fff"
+                            android:visibility="visible" />
+
+
+                        <TextView
+                            android:id="@+id/clear_filter"
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="#228B22"
+                            android:drawableStart="@drawable/ic_close"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#fff"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:id="@+id/deal_bookingInquiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:backgroundTint="#C0CA33"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Booking"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/deal_bookingInquiry_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/deal_deliveryInquiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:backgroundTint="#1a3568"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Delivery"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/deal_deliveryInquiry_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/deal_dropInquiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:backgroundTint="#553038"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Drop Inquire"
+                        android:textColor="#039BE5"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/deal_dropInquiry_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/deal_sell_lost_Inquiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:backgroundTint="#e1bee7"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Sell Lost"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/deal_sell_lost_Inquiry_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>

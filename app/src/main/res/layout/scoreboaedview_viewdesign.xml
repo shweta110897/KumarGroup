@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardwhite"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Lin_monthlyDailyWeeklyMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtDisplayName"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FName"
+                android:singleLine="false" />
+
+
+            <TextView
+                android:id="@+id/txtDisplayCategory"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Category name"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/txtDisplayEmpName"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee Name"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/txtDisplayMobile"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Mobile"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/txtDisplayWhatsAppNumber"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whats App Number"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtDisplayDescription"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtstate"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/txtCityName"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/txtdistrict"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="district"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/txtTehsil"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tehsil"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:id="@+id/txtDisplayVillage"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Village"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtLoginEmployee"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login Employee"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtDate"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtEnteryDate"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entery Date"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txt_DealPrice"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deal Price"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtFollowuptype"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow Up Type"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtDisplayNextDate"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next Date"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtDisplayInquiryType"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inquiry Type"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtWorkTypeService"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Type service"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtMakeName"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make Name"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtModelName"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model Name"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtModelYear"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model Year"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtSourceOfInquire"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source Of Inquire"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtDelivery"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtDeliveryModelName"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Model Name"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtSellLost"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell Lost"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtSellModel"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell Model"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtDropInquire"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drop Inquire"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtCgst"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C Gst"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtSgst"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S gst"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/lin_MDY_call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/lin_MDY_sms"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/sms"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/lin_MDY_whapp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whapppng"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/lin_MDY_share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/share"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   " />
+
+            <!-- <TextView
+                 android:id="@+id/lin_MDY_visit"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="@drawable/general_visit"
+                 android:gravity="center"
+                 android:textColor="@color/colorWhite"
+                 android:textSize="20sp" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

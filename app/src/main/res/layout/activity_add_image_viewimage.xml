@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inquiry.AddImageViewimageActivity">
+
+    <Button
+        android:id="@+id/addimage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="Add image"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+
+    <Button
+        android:id="@+id/viewimage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/addimage"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="View image"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_below="@id/viewimage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="15dp" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/submit_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
